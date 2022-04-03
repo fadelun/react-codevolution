@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import HooksState from "./components/HooksState";
+// import HookCounterThree from "./components/HookCounterThree";
+// import HookCounterFour from "./components/HookCounterFour";
+// import HookEffect from "./components/HookEffect";
+// import HookMouse from "./components/HookMouse";
+// import HookContainer from "./components/HookContainer";
+// import DataFetching from "./components/DataFetching";
+import React from "react";
+import ComponentC from "./components/ComponentC";
+
+export const UserContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserContext.Provider value={"fadel"}>
+        <ComponentC />
+      </UserContext.Provider>
     </div>
   );
 }
