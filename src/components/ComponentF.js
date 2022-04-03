@@ -1,17 +1,12 @@
 import React from "react";
 
-import { UserContext } from "../App";
-// import { UserContext } from "./ComponentC";
+// import { UserContext } from "../App";
+import { UserContext } from "./ComponentC";
 
 function ComponentF() {
   return (
     <div>
       <UserContext.Consumer>
-        {(user) => {
-          return <p>Halo my name is {user}</p>;
-        }}
-      </UserContext.Consumer>
-      {/* <UserContext.Consumer>
         {(data) => {
           return (
             <div className="user">
@@ -20,7 +15,7 @@ function ComponentF() {
             </div>
           );
         }}
-      </UserContext.Consumer> */}
+      </UserContext.Consumer>
     </div>
   );
 }
