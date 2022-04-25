@@ -1,17 +1,13 @@
 import React from "react";
 import "./App.css";
-import DataFetching from "./components/DataFetching";
-
-const initialState = {
-  loading: true,
-  error: "",
-  post: {},
-};
+import FocusInput from "./components/FocusInput";
+import NotCauseRenders from "./components/NotCauseRenders";
 
 function App() {
   return (
     <div className="App">
-      <DataFetching count={initialState} />
+      {/* <FocusInput /> */}
+      <NotCauseRenders />
     </div>
   );
 }
