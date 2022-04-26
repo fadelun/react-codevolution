@@ -8,7 +8,7 @@ function NotCauseRenders() {
 
   useEffect(() => {
     count.current = count.current + 1;
-  }, []);
+  });
 
   return (
     <>
